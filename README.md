@@ -1,5 +1,6 @@
 # AndroidNativeVisualStudioTemplate
 Android Native Activity (GameActivity) For Visual Studio Template
+* All java and cpp files are copied from Android Studio GameActivty Template project
 
 ## Installation
 1. Zip All files
