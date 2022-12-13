@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+	<TemplateData>
+		<Name>Android App</Name>
+		<Description>Android Gradle project</Description>
+		<ProjectType>Android</ProjectType>
+		<ProjectSubType>
+    </ProjectSubType>
+		<SortOrder>1000</SortOrder>
+		<CreateNewFolder>true</CreateNewFolder>
+		<DefaultName>Android</DefaultName>
+		<ProvideDefaultName>true</ProvideDefaultName>
+		<LocationField>Enabled</LocationField>
+		<EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+		<Icon>__TemplateIcon.ico</Icon>
+	</TemplateData>
+	<TemplateContent>
+		<Project TargetFileName="$ext_projectname$.Android.androidproj" File="Template.Android.androidproj" ReplaceParameters="true">
+			<Folder Name="app" TargetFolderName="app">
+				<Folder Name="src" TargetFolderName="src">
+					<Folder Name="main" TargetFolderName="main">
+						<ProjectItem ReplaceParameters="true" TargetFileName="AndroidManifest.xml.template">AndroidManifest.xml.template</ProjectItem>
+						<Folder Name="assets" TagetFolderName="assets">
+							<ProjectItem ReplaceParameters="false" TargetFileName="android_robot.png">android_robot.png</ProjectItem>
+						</Folder>
+						<Folder Name="cpp" TargetFolderName="cpp">
+							<ProjectItem ReplaceParameters="false" TargetFileName="AndroidOut.cpp">AndroidOut.cpp</ProjectItem>
+							<ProjectItem ReplaceParameters="false" TargetFileName="AndroidOut.h">AndroidOut.h</ProjectItem>
+							<ProjectItem ReplaceParameters="true" TargetFileName="CMakeLists.txt">CMakeLists.txt</ProjectItem>
+							<ProjectItem ReplaceParameters="false" TargetFileName="main.cpp">main.cpp</ProjectItem>
+							<ProjectItem ReplaceParameters="false" TargetFileName="Model.h">Model.h</ProjectItem>
+							<ProjectItem ReplaceParameters="false" TargetFileName="Renderer.cpp">Renderer.cpp</ProjectItem>
+							<ProjectItem ReplaceParameters="false" TargetFileName="Renderer.h">Renderer.h</ProjectItem>
+							<ProjectItem ReplaceParameters="false" TargetFileName="Shader.cpp">Shader.cpp</ProjectItem>
+							<ProjectItem ReplaceParameters="false" TargetFileName="Shader.h">Shader.h</ProjectItem>
+							<ProjectItem ReplaceParameters="false" TargetFileName="TextureAsset.cpp">TextureAsset.cpp</ProjectItem>
+							<ProjectItem ReplaceParameters="false" TargetFileName="TextureAsset.h">TextureAsset.h</ProjectItem>
+							<ProjectItem ReplaceParameters="false" TargetFileName="Utility.cpp">Utility.cpp</ProjectItem>
+							<ProjectItem ReplaceParameters="false" TargetFileName="Utility.h">Utility.h</ProjectItem>
+						</Folder>
+						<Folder Name="java" TargetFolderName="java">
+							<Folder Name="com" TargetFolderName="com">
+								<Folder Name="fgame" TargetFolderName="fgame">
+									<Folder Name="Template_Android" TargetFolderName="$ext_projectname$">
+										<ProjectItem ReplaceParameters="true" TargetFileName="MainActivity.java">MainActivity.java</ProjectItem>
+										<ProjectItem ReplaceParameters="true" TargetFileName="EditTextActivity.java">EditTextActivity.java</ProjectItem>
+									</Folder>
+								</Folder>
+							</Folder>
+						</Folder>
+						<Folder Name="res" TagetFolderName="res">
+							<Folder Name="drawable" TagetFolderName="drawable">
+								<ProjectItem ReplaceParameters="false" TargetFileName="ic_launcher_background.xml">ic_launcher_background.xml</ProjectItem>
+							</Folder>
+							<Folder Name="drawable-v24" TagetFolderName="drawable-v24">
+								<ProjectItem ReplaceParameters="false" TargetFileName="ic_launcher_foreground.xml">ic_launcher_foreground.xml</ProjectItem>
+							</Folder>
+							<Folder Name="layout" TagetFolderName="layout">
+								<ProjectItem ReplaceParameters="true" TargetFileName="dialog.xml">dialog.xml</ProjectItem>
+							</Folder>
+							<Folder Name="mipmap-anydpi-v26" TagetFolderName="mipmap-anydpi-v26">
+								<ProjectItem ReplaceParameters="false" TargetFileName="ic_launcher.xml">ic_launcher.xml</ProjectItem>
+								<ProjectItem ReplaceParameters="false" TargetFileName="ic_launcher_round.xml">ic_launcher_round.xml</ProjectItem>
+							</Folder>
+							<Folder Name="mipmap-hdpi" TagetFolderName="mipmap-hdpi">
+								<ProjectItem ReplaceParameters="false" TargetFileName="ic_launcher.webp">ic_launcher.webp</ProjectItem>
+								<ProjectItem ReplaceParameters="false" TargetFileName="ic_launcher_round.webp">ic_launcher_round.webp</ProjectItem>
+							</Folder>
+							<Folder Name="mipmap-mdpi" TagetFolderName="mipmap-mdpi">
+								<ProjectItem ReplaceParameters="false" TargetFileName="ic_launcher.webp">ic_launcher.webp</ProjectItem>
+								<ProjectItem ReplaceParameters="false" TargetFileName="ic_launcher_round.webp">ic_launcher_round.webp</ProjectItem>
+							</Folder>
+							<Folder Name="mipmap-xhdpi" TagetFolderName="mipmap-xhdpi">
+								<ProjectItem ReplaceParameters="false" TargetFileName="ic_launcher.webp">ic_launcher.webp</ProjectItem>
+								<ProjectItem ReplaceParameters="false" TargetFileName="ic_launcher_round.webp">ic_launcher_round.webp</ProjectItem>
+							</Folder>
+							<Folder Name="mipmap-xxhdpi" TagetFolderName="mipmap-xxhdpi">
+								<ProjectItem ReplaceParameters="false" TargetFileName="ic_launcher.webp">ic_launcher.webp</ProjectItem>
+								<ProjectItem ReplaceParameters="false" TargetFileName="ic_launcher_round.webp">ic_launcher_round.webp</ProjectItem>
+							</Folder>
+							<Folder Name="mipmap-xxxhdpi" TagetFolderName="mipmap-xxxhdpi">
+								<ProjectItem ReplaceParameters="false" TargetFileName="ic_launcher.webp">ic_launcher.webp</ProjectItem>
+								<ProjectItem ReplaceParameters="false" TargetFileName="ic_launcher_round.webp">ic_launcher_round.webp</ProjectItem>
+							</Folder>
+							<Folder Name="values" TagetFolderName="values">
+								<ProjectItem ReplaceParameters="false" TargetFileName="colors.xml">colors.xml</ProjectItem>
+								<ProjectItem ReplaceParameters="true" TargetFileName="strings.xml">strings.xml</ProjectItem>
+								<ProjectItem ReplaceParameters="true" TargetFileName="themes.xml">themes.xml</ProjectItem>
+							</Folder>
+							<Folder Name="values-night" TagetFolderName="values-night">
+								<ProjectItem ReplaceParameters="true" TargetFileName="themes.xml">themes.xml</ProjectItem>
+							</Folder>
+							<Folder Name="xml" TagetFolderName="xml">
+								<ProjectItem ReplaceParameters="false" TargetFileName="backup_rules.xml">backup_rules.xml</ProjectItem>
+								<ProjectItem ReplaceParameters="false" TargetFileName="data_extraction_rules.xml">data_extraction_rules.xml</ProjectItem>
+							</Folder>
+						</Folder>
+					</Folder>
+				</Folder>
+				<Folder Name="libs" TargetFolderName="libs"></Folder>
+				<ProjectItem ReplaceParameters="false" TargetFileName=".gitignore">.gitignore</ProjectItem>
+				<ProjectItem ReplaceParameters="true" TargetFileName="build.gradle.template">build.gradle.template</ProjectItem>
+				<ProjectItem ReplaceParameters="true" TargetFileName="proguard-rules.pro">proguard-rules.pro</ProjectItem>
+			</Folder>
+			<Folder Name="gradle" TargetFolderName="gradle">
+				<Folder Name="wrapper" TargetFolderName="wrapper">
+					<ProjectItem ReplaceParameters="false" TargetFileName="gradle-wrapper.jar">gradle-wrapper.jar</ProjectItem>
+					<ProjectItem ReplaceParameters="false" TargetFileName="gradle-wrapper.properties.template">gradle-wrapper.properties.template</ProjectItem>
+				</Folder>
+			</Folder>
+			<ProjectItem ReplaceParameters="false" TargetFileName=".gitignore">.gitignore</ProjectItem>
+			<ProjectItem ReplaceParameters="true" TargetFileName="build.gradle.template">build.gradle.template</ProjectItem>
+			<ProjectItem ReplaceParameters="false" TargetFileName="gradle.properties">gradle.properties</ProjectItem>
+			<ProjectItem ReplaceParameters="false" TargetFileName="gradlew">gradlew</ProjectItem>
+			<ProjectItem ReplaceParameters="false" TargetFileName="gradlew.bat">gradlew.bat</ProjectItem>
+			<ProjectItem ReplaceParameters="true" TargetFileName="settings.gradle.template">settings.gradle.template</ProjectItem>
+		</Project>
+	</TemplateContent>
+</VSTemplate>

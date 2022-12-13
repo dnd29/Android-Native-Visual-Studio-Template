@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>Android GameActivity C++ Template App</Name>
+        <Description>Android GameActivity C++ Template App</Description>
+        <ProjectType>VC</ProjectType>
+		<TemplateID>VC.OpenGLES3Application</TemplateID>
+		<LocationField>Enabled</LocationField>
+		<EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+		<DefaultName>Android_App</DefaultName>
+		<ProvideDefaultName>true</ProvideDefaultName>
+		<NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    </TemplateData>
+    <TemplateContent>
+	<ProjectCollection PreferedSolutionConfiguration="Debug|ARM64">
+		<SolutionFolder Name="$projectname$">
+			<SolutionFolder Name="Application">
+				<ProjectTemplateLink ProjectName="$projectname$.Android" CopyParameters="true">
+					Template.Android\MyTemplate.vstemplate
+				</ProjectTemplateLink>
+            </SolutionFolder>
+        </SolutionFolder>
+    </ProjectCollection>
+    </TemplateContent>
+</VSTemplate>
